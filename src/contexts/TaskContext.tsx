@@ -1,11 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { Task } from '../models/task.model';
-
-interface TaskContextType {
-  tasks: Task[];
-  addTask: (task: Task) => void;
-  removeTask: (id: string) => void;
-}
+import type { TaskContextType } from '../models/taskContextType.model';
 
 const TaskContext = createContext<TaskContextType | undefined>(undefined);
 
