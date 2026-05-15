@@ -4,7 +4,7 @@ networks:
 services:
   app:
     image: node:22-alpine
-    container_name: vite_app
+    container_name: vite_app_react
     # Mantém o container rodando
     tty: true
   # Mapeia a porta 5173 do container para o seu computador (host:container)
